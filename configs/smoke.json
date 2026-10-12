@@ -1,0 +1,22 @@
+{
+  "backend": "tiny",
+  "manifest": "data/synthetic/manifest.csv",
+  "output": "runs/smoke",
+  "disease": "synthetic liver-cancer research scenario",
+  "features": ["age", "albumin_g_L", "bilirubin_umol_L", "afp_ng_mL", "ecog"],
+  "time_edges": [0, 90, 180, 365, 540, 730, 1095],
+  "image_mode": "volume",
+  "image_shape": [24, 24, 24],
+  "feature_dim": 64,
+  "visual_tokens": 8,
+  "use_image": true,
+  "use_tabular": true,
+  "epochs": 12,
+  "batch_size": 16,
+  "accumulation_steps": 1,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "evidence_weight": 0.0,
+  "seed": 17,
+  "device": "cpu"
+}
